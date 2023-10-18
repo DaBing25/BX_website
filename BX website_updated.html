@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BX Website</title>
+  <style>
+    /* CSS to position the elements */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .header-container {
+      position: fixed; /* Change to fixed positioning */
+      top: 0; /* Position at the top */
+      left: 0; /* Position at the left */
+      width: 100%; /* Set width to 100% */
+    }
+    header {
+      background-color: #fff;
+      padding: 20px;
+      overflow: auto; /* Add overflow property to clear floats */
+      height: 60px;
+    }
+    nav {
+      position: fixed;
+      background-color: #fff; /* Changed to white */
+      color: #333; /* Changed the text color */
+      padding: 10px;
+      text-align: center;
+      display: inline-block; /* Display inline with the header */
+      margin-top: 20px;
+      margin-right: 60px;
+    }
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      margin-left: 415px; /* Move nav bar */
+      
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+      padding: 20px; /* Space between subsections */
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+    nav a:hover {
+    color: rgb(171, 167, 167); /* Set the text color when hovering over the link */
+    }
+
+
+
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 250px;
+      max-width: 100%;
+      height: auto;
+      margin-left: 80px; /* Move the pic */
+      margin-top: 160px; /* Adjust the margin-top value to create space below the header */
+    }
+
+    .text-container {
+      flex-grow: 1; /* Allow text to grow and take up remaining space */
+      text-align: left; 
+      margin-right: 60px;
+      margin-top: 150px;
+     
+      font-size: 12pt;
+      line-height: 1.5;
+    }
+    
+    .image-with-text {
+      display: flex; 
+      align-items: center; /* Center items vertically */
+      justify-content: space-between;
+    }
+    .image-with-text img {
+      margin-right: 15px; /* Adjust the margin-right value to create space between the image and text */
+    }
+    
+    h1 {
+      display: inline; /* Display inline */
+      float: left; /* Move to the left */
+      margin-left: 110px; /* Move 'Bingxu Li' */
+    }
+
+
+
+
+    section {
+      /* height: 100px; */
+      padding: 1px; /* Adjust padding to add spacing within the sections */
+      text-align: left;
+      
+    }
+    #Research li{
+      background-color: #fff;
+      margin-top: 5px; 
+      margin-left: 55px; /* move list items right and left */
+      line-height: 1.1;
+      margin-bottom: 1px;
+      font-size: 15px;
+    }
+
+    #Publication li{
+      background-color: #fff;
+      margin-left: 52px;
+      margin-right: 60px;
+      margin-top: 5px;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    #Contact p{
+      background-color: #fff;
+      margin-left: 75px;
+      margin-top: 5px;
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+
+
+
+    #Research h2{
+        font-size: 16px;
+        margin-left: 75px;
+        margin-top: 40px; 
+        /* font-weight: normal; Remove bold style */
+    }
+
+    #Publication h2{
+        font-size: 16px;
+        margin-left: 75px;
+        
+        /* font-weight: normal; Remove bold style */
+    }
+
+    #Contact h2{
+        font-size: 16px;
+        margin-left: 75px;
+        
+        /* font-weight: normal; Remove bold style */
+    }
+
+    footer {
+        font-size: 12px;
+        margin-bottom: 1px;
+    }
+
+  </style>
+
+
+
+</head>
+<body>
+  <div class="header-container">
+    <header>
+      <h1>Bingxu Li</h1> 
+      <nav>
+        <ul>
+          <li><a href="#Research">Research</a></li>
+          <li><a href="#Publication">Publication</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  
+    <div class="image-with-text">
+      <img src="BX_headshot.jpg" alt="Photo">
+      <div class="text-container">
+        <p>I am a researcher in the fields of haptic science and haptic engineering, 
+            focusing on the exploration of skin biomechanics 
+            to decode and replicate our sense of touch. I am the founder 
+            of SmartHap LLC., where we leverage the capabilities of smart materials and 
+            smart structures to create cutting-edge multimodal sensing and actuating platforms.
+            Our mission is to revolutionize the communication and interaction between the users 
+            and various systems, elevating the overall tactile experiences. </p>
+
+        </p>I received my M.S and Ph.D in Systems Engineering at the University
+            of Virgina in 2020 and 2023, respectively, where I worked in Gerling Touch Lab
+            advised by Prof. Gerling. </p> 
+            
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <section id="Research">
+    <h2>Research interest </h2>
+    <ul>
+        <li></p>Fundemental research in haptic/tactile perception</p></li>
+        <li></p>Development of electromechanical devices for enhancing human-centered systems</p></li>
+        <li></p> Interested domain includes but not limited to: soft robotics, telecommunication,
+          biomedical devices and human-robot interaction (HRI) </p></li>
+
+        <!-- <li>Applications of smart material in HCI, soft robotics, medical devices, 
+            and tele-rehabilitation.</li> -->
+        <!-- <li>Applications of smart material across various domains, 
+            including Human-Computer Interaction (HCI), soft robotics, medical devices, 
+            and tele-rehabilitation.</li> -->
+      </ul>
+  </section>
+
+
+
+  <section id="Publication">
+    <h2>Selected publication</h2>
+    <ul>
+        <li>B. Li, S. C. Hauser, and G. J. Gerling, 
+            Faster indentation influences skin deformation to reduce tactile discriminability 
+            of compliant objects,
+            IEEE Transactions on Haptics, 2023 </li>
+        
+        <li>B. Li and G. J. Gerling, Individual differences impacting skin deformation and 
+            tactile discrimination with compliant elastic surfaces,
+            IEEE World Haptics Conference (WHC), 2021</li>
+
+        <li>B. Li, J. Lee, G. J. Gerling, A Magnetorheological Elastomer Device for Programmable Actuation and
+           Sensing of Soft Haptic Experiences, 
+          IEEE World Haptics Conference (WHC), 2021</li>
+
+      </ul>
+
+  </section>
+
+
+  <section id="Contact">
+    <h2>Contact </h2>
+    <!-- <ul>
+        <li>Email: bingxu.contact@gmail</li>
+        <li>Google scholar:</li>
+        <li>LinkedIn:</li>
+
+      </ul> -->
+    <p>Email: bingxu.contact@gmail.com &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; 
+        <a href="https://scholar.google.com/citations?user=QW9fOUcAAAAJ&hl=en" target="_blank">Google Scholar</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <!-- Google Scholar  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  -->
+        <a href="https://www.linkedin.com/in/bingxu-li-ph-d-0a2634150/" target="_blank"> LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+
+  </section>
+
+
+  <footer>
+    <p>&copy; 2023 Bingxu Li. All rights reserved.</p>
+  </footer> 
+
+
+</body>
+</html>
